@@ -15,7 +15,7 @@ public class addCommentTest {
      */
     void checkUpperCase(){
         Post cmtUpper = new Post();
-        assertEquals(false, cmtUpper.addComment("hey h"));
+        assertEquals(false, cmtUpper.addComment("hey hello my nam ie hello"));
     }
     @Test
     /* Checking the requirements:
@@ -61,6 +61,6 @@ public class addCommentTest {
      */
     void checkComment(){
         Post checkcmt = new Post();
-        assertEquals(false, checkcmt.addComment("hello my name is anna"));
+        assertEquals(false, checkcmt.addComment("Hello my name is anna. Hello my name is anna. Hello my name is anna"));
     }
 }
