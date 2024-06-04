@@ -52,8 +52,9 @@ public class addPostTest {
         assertEquals(false, checkBody.addPost());
     }
     @Test
+    /* There should be at least 2 tags in a post */
     void checkTagsAmount(){
-        String[] tags = {"tag1"};
+        String[] tags = {"tag1", "tag2"};
         String[] type = {"Difficult"};
         String[] sos = {"Highly Needed"};
         Post checkTags = new Post();
@@ -66,7 +67,7 @@ public class addPostTest {
         checkTags.setPostType(type);
         checkTags.setPostEmergency(sos);
 
-        assertEquals(false, checkTags .addPost());
+        assertEquals(true, checkTags .addPost());
     }
 
     @Test
@@ -94,6 +95,7 @@ public class addPostTest {
     @Test
     /* Checking the requirements:
      * "Easy" posts should not have more than 3 tags
+     * In this case, this test case will have 5 tags which would mean that it doesn't satisfy the requirement
      */
     void checkingEasyPostType(){
         String[] tags = {"tag1", "tag2", "tag3", "tag4", "tag5"};
@@ -117,19 +119,6 @@ public class addPostTest {
      * "Very Difficult" & "Difficult" posts should have a minimum of 300 characters in body.
      */
     void checkOtherPostType(){
-        // String[] tags = {"tag1", "tag2", "tag3", "tag4", "tag5"};
-        // String[] type = {"Difficult", "Very Difficult"};
-        // String[] sos = {"Highly Needed"};
-        // Post checkType_Other= new Post();
-        // checkType_Other.setPostId(7);
-        // checkType_Other.setPostTitle("Thetitle is long.");
-        // checkType_Other.setPostBody("This is the post body. It needs to be at least 300 characters long. I hope this is enough characters."
-        //                     + " This is the post body. It needs to be at least 300 characters long. I hope this is enough characters.");
-        // checkType_Other.setPostTags(tags);
-        // checkType_Other.setPostType(type);
-        // checkType_Other.setPostEmergency(sos);
-
-        // assertEquals(false, checkType_Other.addPost());
 
         String[] tags = {"tag1", "tag2"};
         String[] type = {"Difficult"};

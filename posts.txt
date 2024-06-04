@@ -1,3 +1,11 @@
+Post ID: 4
+Title: Thetitle is long.
+Body: This is the post body. It needs to be at least 250 characters long. I hope this is enough characters. This is the post body. It needs to be at least 250 characters long. I hope this is enough characters. This is the post body. It needs to be at least 250 characters long. I hope this is enough characters.
+Tags: tag1, tag2
+Type: [Ljava.lang.String;@482cd91f
+Emergency: [Ljava.lang.String;@123f1134
+Comments: 
+
 Post ID: 8
 Title: Thetitle is long.
 Body: This is the post body. It needs to be at least 300 characters long. I hope this is enough characters. This is the post body. It needs to be at least 300 characters long. I hope this is enough characters. This is the post body. It needs to be at least 300 characters long. I hope this is enough characters.This is the post body. It needs to be at least 300 characters long. I hope this is enough characters.
