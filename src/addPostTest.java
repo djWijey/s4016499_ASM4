@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class addPostTest {
     @Test
+    //Checking if the post is valid, as title requirements is not satisifed.
     void testTitle() {
         String[] tags = {"tag1", "tag2"};
         String[] type = {"Difficult"};
@@ -20,6 +21,7 @@ public class addPostTest {
         assertEquals(false, checkTitleLength.addPost());
     }
     @Test
+    //Checking if post is valid, becase the title contains special characters
     void testTitleSpecialCharacter(){
         String[] tags = {"tag1", "tag2"};
         String[] type = {"Difficult"};
@@ -37,6 +39,7 @@ public class addPostTest {
         assertEquals(false, checkSpecialCharacter.addPost());
     }
     @Test
+    //Check if post is valid, the post body must contain at least 250 characters.
     void checkPostBody(){
         String[] tags = {"tag1", "tag2"};
         String[] type = {"Difficult"};
@@ -124,7 +127,7 @@ public class addPostTest {
         String[] type = {"Difficult"};
         String[] sos = {"Immediately Needed", "Highly Needed"};
         Post checkEmergency_Easy= new Post();
-        checkEmergency_Easy.setPostId(8);
+        checkEmergency_Easy.setPostId(7);
         checkEmergency_Easy.setPostTitle("Thetitle is long.");
         checkEmergency_Easy.setPostBody("This is the post body. It needs to be at least 300 characters long. I hope this is enough characters."
                             + " This is the post body. It needs to be at least 300 characters long. I hope this is enough characters."
